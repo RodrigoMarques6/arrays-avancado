@@ -25,3 +25,9 @@ const nomes2 = ['Rodrigo', 'Lucas', 'João', 'Maria']
 const adicionados = nomes2.splice(3, 0, 'Rodrigo2', 'Marcos', 'Otávio')
 console.log(nomes2, adicionados)
 // Ou seja, a partir do índice 3, adicione os elementos que eu especifiquei, e não remova nennum (o zero representa isso, não remover nenhum)
+
+// Também posso trocar elementos do array, a exemplo:
+const nomes3 = ['Rodrigo', 'Lucas', 'João', 'Maria']
+const substituidos = nomes3.splice(3, 1, 'Novo Integrante')
+console.log(nomes3, substituidos)
+// Perceba que a Maria foi substituida pelo novo integrante nesse caso, e retornado a Maria em um novo array, que seriam os substituidos.
