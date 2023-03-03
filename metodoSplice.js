@@ -1,9 +1,3 @@
-// Módulo de arrays avançado - Curso Udemy:
-
-// O básico de arrays:
-// -------------------------------------------------------------------------------
-
-// MÉTODO SPLICE():
 // O método splice() altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
 // Retorna uma lista contendo os elementos removidos. Se apenas um elemento é removido, por exemplo, uma lista contendo apenas um elemento é retornada. Se nenhum elemento é removido, uma lista vazia é retornada.
 
@@ -31,3 +25,10 @@ const nomes3 = ['Rodrigo', 'Lucas', 'João', 'Maria']
 const substituidos = nomes3.splice(3, 1, 'Novo Integrante')
 console.log(nomes3, substituidos)
 // Perceba que a Maria foi substituida pelo novo integrante nesse caso, e retornado a Maria em um novo array, que seriam os substituidos.
+
+// Simulando o método pop() dentro do splice():
+const nomes4 = ['Rodrigo', 'Lucas', 'João', 'Maria']
+const removidos2 = nomes4.splice(3, 1)
+console.log(nomes4, removidos2)
+// Logo, removi a Maria nesse caso, e retornou o array com a pessoa que foi removida. 
+// Interpretando, do índice 3, remova 1
