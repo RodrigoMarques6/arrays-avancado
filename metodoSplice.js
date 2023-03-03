@@ -32,3 +32,9 @@ const removidos2 = nomes4.splice(3, 1)
 console.log(nomes4, removidos2)
 // Logo, removi a Maria nesse caso, e retornou o array com a pessoa que foi removida. 
 // Interpretando, do índice 3, remova 1
+
+// Simulando o método shift() com splice():
+const nomes5 = ['Rodrigo', 'Lucas', 'João', 'Maria']
+const removidos3 = nomes5.splice(0, 1)
+console.log(nomes5, removidos3)
+// Ou seja, do índice 0, remova 1
