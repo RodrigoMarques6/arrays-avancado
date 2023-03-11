@@ -63,3 +63,37 @@ console.log(nomeTerminaComA)
 
 // toLotoLowerCase() foi utilizado para transformar o caractere em minúsculo;
 // endsWith('a') = 'termina com (a)'
+
+
+// Praticando um pouco: 
+const array1 = ['Rodrigo', 'Sandi', 'Lucas'];
+
+const temSandi = (valor, indice, array) => {
+  if (valor === 'Sandii') {
+    return true}
+}
+
+const queroFiltrar = array1.filter(temSandi)
+console.log(queroFiltrar)
+// Nesse caso, não me retornou nada, tendo em vista não conter o valor especificado em função callback.
+
+
+const pessoas2 = [
+  { nome: "Rodrigo", idade: 26, profissão: "Programador" },
+  { nome: "Hugo", idade: 27, profissão: "Professor" },
+  { nome: "Paulo", idade: 24, profissão: "Advogado" },
+  { nome: "Gabriel", idade: 56, profissão: "Policial" },
+  { nome: "Bruno", idade: 34, profissão: "Motorista" },
+];
+
+// Vamos retornar as pessoas que possuem 5 letras em seu nome, ou mais:
+
+const pessoasComCincoLetras = pessoas2.filter(function (valor, indice, array) {
+  console.log(typeof pessoas2)
+  if (valor.nome.length === 5) {
+    return true
+  }
+})
+
+console.log(pessoasComCincoLetras)
+// Ou seja, retornamos pessoas que possuem 5 letras em seu nome, através do método filter.
